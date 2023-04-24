@@ -46,11 +46,12 @@ jobs:
         blender: 3.4.1
       vm:
         size: 'gpu-xlarge'
+      language: python
+      python:
+        - "3.9"
       arch: 'amd64'
       script:
-        - df -h
-        - blender -v
-        - echo "it is done"
+        - python hello_world.py
     - stage: "Instal addons on linux"
       name: "addons on focal distribution"
       dist: focal
@@ -59,8 +60,9 @@ jobs:
         blender: 3.4.1
       vm:
         size: 'gpu-medium'
+      language: python
+      python:
+        - "3.9"
       arch: 'amd64'
       script:
-        - df -h
-        - blender -v
-        - echo "it is done"
+        - python hello_world.py
