@@ -1,8 +1,6 @@
 os: linux
 dist: focal
-
-language: ruby
-rvm: 2.7.1
+language: python
 
 branches:
   only:
