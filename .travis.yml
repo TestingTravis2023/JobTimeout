@@ -5,8 +5,6 @@ language: python
 branches:
   only:
   - main
-  - secure-test
-  - prd-gpu-support
 
 import:
   - gpu.yml
