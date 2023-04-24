@@ -1,43 +1,43 @@
 jobs:
   include:
-    - stage: "NO GPU"
-      name: "there is no gpu used"
-      dist: focal
-      vm:
-        size: 'medium'
-      arch: 'amd64'
-      script:
-        - df -h
-        - lspci
-        - echo "It is done"
-    - stage: "GPU - with no addons"
-      name: "with no addons"
-      dist: focal
-      vm:
-        size: 'gpu-medium'
-      arch: 'amd64'
-      script:
-        - df -h
-        - lspci
-        - echo "It is done"
-    - stage: "GPU - with no addons x-large"
-      name: "without addons x-large"
-      dist: focal
-      vm:
-        size: 'gpu-xlarge'
-      arch: 'amd64'
-      script:
-        - df -h
-        - lspci
-        - echo "It is done"
-    - stage: "GPU - with no addons - Windows Build - No Run"
-      name: "with no addons"
-      os: windows
-      vm:
-        size: 'gpu-medium'
-      arch: 'amd64'
-      script:
-        - echo "No Build"
+#     - stage: "NO GPU"
+#       name: "there is no gpu used"
+#       dist: focal
+#       vm:
+#         size: 'medium'
+#       arch: 'amd64'
+#       script:
+#         - df -h
+#         - lspci
+#         - echo "It is done"
+#     - stage: "GPU - with no addons"
+#       name: "with no addons"
+#       dist: focal
+#       vm:
+#         size: 'gpu-medium'
+#       arch: 'amd64'
+#       script:
+#         - df -h
+#         - lspci
+#         - echo "It is done"
+#     - stage: "GPU - with no addons x-large"
+#       name: "without addons x-large"
+#       dist: focal
+#       vm:
+#         size: 'gpu-xlarge'
+#       arch: 'amd64'
+#       script:
+#         - df -h
+#         - lspci
+#         - echo "It is done"
+#     - stage: "GPU - with no addons - Windows Build - No Run"
+#       name: "with no addons"
+#       os: windows
+#       vm:
+#         size: 'gpu-medium'
+#       arch: 'amd64'
+#       script:
+#         - echo "No Build"
     - stage: "Instal addons on linux"
       name: "addons on xenial distribution"
       dist: xenial
