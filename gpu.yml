@@ -53,6 +53,7 @@ jobs:
       script:
         - df -h
         - lspci
+        - nvidia-smi
         - python hello_world.py
     - stage: "Instal addons on linux"
       name: "addons on focal distribution gpu medium"
@@ -69,4 +70,5 @@ jobs:
       script:
         - df -h
         - lspci
+        - nvidia-smi
         - python hello_world.py
