@@ -39,7 +39,7 @@ jobs:
 #       script:
 #         - echo "No Build"
     - stage: "Instal addons on linux"
-      name: "addons on focal distribution"
+      name: "addons on focal distribution gpu xlarge"
       dist: focal
       addons:
         tensorflow: 1.6.0
@@ -51,9 +51,11 @@ jobs:
         - "3.9"
       arch: 'amd64'
       script:
+        - df -h
+        - lspci
         - python hello_world.py
     - stage: "Instal addons on linux"
-      name: "addons on focal distribution"
+      name: "addons on focal distribution gpu medium"
       dist: focal
       addons:
         tensorflow: 1.6.0
@@ -65,4 +67,6 @@ jobs:
         - "3.9"
       arch: 'amd64'
       script:
+        - df -h
+        - lspci
         - python hello_world.py
