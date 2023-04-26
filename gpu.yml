@@ -54,19 +54,19 @@ jobs:
         - df -h
         - lspci
         - python hello_world.py
-    - stage: "Instal addons on linux"
-      name: "addons on focal distribution gpu medium"
-      dist: focal
-      addons:
-        tensorflow: 1.6.0
-        blender: 3.4.1
-      vm:
-        size: 'gpu-medium'
-      language: python
-      python:
-        - "3.9"
-      arch: 'amd64'
-      script:
-        - df -h
-        - lspci
-        - python hello_world.py
+#     - stage: "Instal addons on linux"
+#       name: "addons on focal distribution gpu medium"
+#       dist: focal
+#       addons:
+#         tensorflow: 1.6.0
+#         blender: 3.4.1
+#       vm:
+#         size: 'gpu-medium'
+#       language: python
+#       python:
+#         - "3.9"
+#       arch: 'amd64'
+#       script:
+#         - df -h
+#         - lspci
+#         - python hello_world.py
