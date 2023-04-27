@@ -1,16 +1,16 @@
 jobs:
   include:
-#     - stage: "NO GPU"
-#       name: "there is no gpu used"
-#       dist: focal
-#       vm:
-#         size: 'medium'
-#       arch: 'amd64'
-#       script:
-#         - df -h
-#         - lspci
-#         - echo "Completed"
-    - stage: "GPU - with no addons"
+    - stage: "NO GPU"
+      name: "there is no gpu used"
+      dist: focal
+      vm:
+        size: 'medium'
+      arch: 'amd64'
+      script:
+        - df -h
+        - lspci
+        - python hello_world.py
+    - stage: "GPU - with no addons medium"
       name: "with no addons"
       dist: focal
       vm:
