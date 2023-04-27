@@ -20,6 +20,7 @@ jobs:
         - df -h
         - lspci
         - python hello_world.py
+        - bash render_script.sh
     - stage: "GPU - with no addons x-large"
       name: "without addons x-large"
       dist: focal
@@ -30,6 +31,7 @@ jobs:
         - df -h
         - lspci
         - python hello_world.py
+        - bash render_script.sh
 #     - stage: "GPU - with no addons - Windows Build - No Run"
 #       name: "with no addons"
 #       os: windows
