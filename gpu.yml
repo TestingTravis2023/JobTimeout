@@ -19,7 +19,7 @@ jobs:
       script:
         - df -h
         - lspci
-        - echo "Completed"
+        - python hello_world.py
     - stage: "GPU - with no addons x-large"
       name: "without addons x-large"
       dist: focal
@@ -29,7 +29,7 @@ jobs:
       script:
         - df -h
         - lspci
-        - echo "Completed"
+        - python hello_world.py
 #     - stage: "GPU - with no addons - Windows Build - No Run"
 #       name: "with no addons"
 #       os: windows
