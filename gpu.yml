@@ -61,7 +61,7 @@ jobs:
       name: "addons on focal distribution gpu medium"
       dist: focal
       addons:
-        tensorflow: 2.11.0
+        tensorflow: 1.6.0
         blender: 3.4.1
       vm:
         size: 'gpu-medium'
