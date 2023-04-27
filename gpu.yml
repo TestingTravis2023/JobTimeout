@@ -9,7 +9,7 @@ jobs:
       script:
         - df -h
         - lspci
-        - echo "It is done"
+        - echo "Completed"
 #     - stage: "GPU - with no addons"
 #       name: "with no addons"
 #       dist: focal
