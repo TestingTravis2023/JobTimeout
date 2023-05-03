@@ -56,7 +56,6 @@ jobs:
         - df -h
         - lspci
         - python hello_world.py
-        - bash render_script.sh
     - stage: "Instal addons on linux"
       name: "addons on focal distribution gpu medium"
       dist: focal
@@ -73,4 +72,3 @@ jobs:
         - df -h
         - lspci
         - python hello_world.py
-        - bash render_script.sh
