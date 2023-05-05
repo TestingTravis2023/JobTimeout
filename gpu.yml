@@ -44,7 +44,7 @@ jobs:
       name: "addons on focal distribution gpu xlarge"
       dist: focal
       addons:
-        tensorflow: 1.6.0
+        tensorflow: 2.6.2
         blender: 3.4.1
       vm:
         size: 'gpu-xlarge'
@@ -60,7 +60,7 @@ jobs:
       name: "addons on focal distribution gpu medium"
       dist: focal
       addons:
-        tensorflow: 1.6.0
+        tensorflow: 2.6.2
         blender: 3.4.1
       vm:
         size: 'gpu-medium'
