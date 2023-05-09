@@ -54,9 +54,9 @@ import time
 # print("Script has finished running for 51 mins by printing every 5 mins anything.")
 
 
-#loop for more than 180 mins
+#loop for more than 225 mins
 # Set the duration to run the script
-DURATION = 181 * 60  # 11 minutes in seconds
+DURATION = 225 * 60  # 225 minutes in seconds
 
 # Set the interval to print remaining time
 # Donot print anything until or > than 10 mins
@@ -78,5 +78,5 @@ while (time.time() - start_time) < DURATION:
     # Sleep for 1 minute
     time.sleep(60)
 
-print("Script has finished running for 181 mins by printing every 5 mins")
+print("Script has finished running for 225 mins by printing every 5 mins")
 
